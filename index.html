@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raviteja Mulukuntla</title>
+  <meta name="description" content="Free programming courses and tutorials by Raviteja Mulukuntla: C#, .NET, React, TypeScript, Python, Tesseract OCR and Git.">
+  <meta name="theme-color" content="#060918">
+  <meta property="og:title" content="Raviteja Mulukuntla | Code · Learn · Build">
+  <meta property="og:description" content="Free programming courses and tutorials: C#, .NET, React, TypeScript, Python, Tesseract OCR and Git.">
+  <meta property="og:image" content="assets/img/avatar.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="home">
+  <div class="bg-fx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span></div>
+  <header id="site-header"></header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <a class="pill" id="hero-pill" href="https://www.youtube.com/@ravitejamulukuntla9655" target="_blank" rel="noopener">
+            <span class="dot"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72a1 1 0 0 0 1.52.85l10.9-6.86a1 1 0 0 0 0-1.7L9.52 4.3A1 1 0 0 0 8 5.14Z"/></svg></span>
+            <span id="hero-pill-text">New: React Part 8, Fetch API &amp; Axios</span>
+          </a>
+          <h1>Learn to code with <span class="line2 grad-text">Raviteja Mulukuntla</span></h1>
+          <p class="tagline"><strong>Full-Stack Developer · Educator · Senior Software Engineer.</strong> Free, step-by-step courses on C#, .NET, React, TypeScript, Python &amp; more, explained the way I wish I'd been taught.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#courses">Explore courses
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="blog.html">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+              Read the blog
+            </a>
+          </div>
+          <div class="hero-stats" id="hero-stats">
+            <div class="stat"><b>25</b><span>Videos</span></div>
+            <div class="stat"><b>4</b><span>Courses</span></div>
+            <div class="stat"><b>6</b><span>Playlists</span></div>
+            <div class="stat"><b>173+</b><span>Subscribers</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="orbit"></span><span class="orbit inner"></span>
+          <div class="avatar-ring"><img src="assets/img/avatar.jpg" alt=""></div>
+          <span class="float-badge b1"><i style="background:#a179ff"></i>C# / .NET</span>
+          <span class="float-badge b2"><i style="background:#61dafb"></i>React</span>
+          <span class="float-badge b3"><i style="background:#ffd43b"></i>Python</span>
+          <span class="float-badge b4"><i style="background:#3178c6"></i>TypeScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech marquee -->
+    <div class="marquee" aria-label="Technologies covered"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- Courses -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Courses &amp; Playlists</span>
+            <h2 class="h2">Structured paths, <span class="grad-text">start to finish</span></h2>
+            <p class="lead">Pick a course and follow the lessons in order. Your progress is saved in this browser automatically.</p>
+          </div>
+        </div>
+        <div class="course-grid" id="course-grid">
+          <div class="skeleton" style="height:380px"></div><div class="skeleton" style="height:380px"></div><div class="skeleton" style="height:380px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Videos -->
+    <section class="section" id="videos" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">All videos</span>
+            <h2 class="h2">Every tutorial, <span class="grad-text">one place</span></h2>
+          </div>
+        </div>
+        <div class="toolbar">
+          <div class="filters" id="video-filters" role="tablist" aria-label="Filter videos by topic"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="video-search" placeholder="Search videos…" aria-label="Search videos">
+          </label>
+        </div>
+        <div class="video-grid" id="video-grid"></div>
+      </div>
+    </section>
+
+    <!-- Blog teaser -->
+    <section class="section" id="blog" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">From the blog</span>
+            <h2 class="h2">Prefer reading? <span class="grad-text">Text tutorials</span></h2>
+            <p class="lead">Written companions to the videos, with copy-paste code and cheat sheets.</p>
+          </div>
+          <a class="link-arrow" href="blog.html">View all posts
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="post-grid" id="post-grid"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" style="padding-top:0">
+      <div class="container">
+        <div class="about reveal">
+          <div class="about-photo">
+            <img src="assets/img/avatar.jpg" alt="Raviteja Mulukuntla channel logo">
+            <div class="sig"><b>Raviteja Mulukuntla</b>Senior Software Engineer</div>
+          </div>
+          <div>
+            <span class="eyebrow">About me</span>
+            <h2 class="h2">Hello, viewers! 👋</h2>
+            <p id="about-bio">I'm Raviteja Mulukuntla, a senior software engineer working at a reputed IT firm. I share my professional experience through beginner-friendly tutorials on programming languages, real-world technical challenges and tricks that level up your coding skills.</p>
+            <p>Got a doubt or a topic you want covered? Drop a comment on any video, or connect with me on <a href="https://www.linkedin.com/in/ravitejamulukuntlaofficial/" target="_blank" rel="noopener" style="color:var(--brand-2);font-weight:700">LinkedIn</a>, and I'll get back to you.</p>
+            <div class="socials" id="about-socials"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h3>Never miss a new tutorial</h3>
+            <p>Subscribe and hit the 🔔 bell to get notified when new lessons drop.</p>
+          </div>
+          <a class="btn" href="https://www.youtube.com/@ravitejamulukuntla9655?sub_confirmation=1" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="#ff0033"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+            Subscribe on YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

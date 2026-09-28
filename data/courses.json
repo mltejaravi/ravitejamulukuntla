@@ -1,0 +1,114 @@
+{
+  "latest": [
+    "UyVtnC3Ncew", "jNmyVzgMe0Y", "_5arBm-6B-c", "RQ9xfm_uuyU", "Pf5ExysnUgE",
+    "0WYv_ix859Y", "xfhifa1zdwo", "UNmKfvUVo5U", "Ym1dkTnDTwo", "z6fgLFi6jcQ",
+    "x5KwiCEQM0M", "KTMza5bX8Yo", "QgoPaBe23ME", "VEHsL6sZzDs", "sOaaqt5QhLk",
+    "CS07rYgymic", "-vKrzsxwuhg", "ltdlmrT3DKk", "2RnUt0oXVwc", "ymuTINfTqbs",
+    "GfTL8A1x9NI", "MahBuXLBUk0", "mWYyL5HoL-U", "mHliiJKMpkY", "qa-VU7Zl7Zk"
+  ],
+  "courses": [
+    {
+      "id": "react",
+      "type": "course",
+      "title": "React JS Tutorial",
+      "description": "Go from zero to building real React apps: project setup, JSX, components, props & state, hooks, events, styling, routing and calling REST APIs with Fetch & Axios.",
+      "topic": "React",
+      "level": "Beginner",
+      "color": "#61dafb",
+      "playlistId": "PLxCUjoBRof1zHroSs9HkxmeKkpMp5asYb",
+      "cover": "UyVtnC3Ncew",
+      "lessons": [
+        { "id": "x5KwiCEQM0M", "title": "Initial Setup & Project Structure", "fullTitle": "React JS Tutorial for Beginners Part 1 | Initial Setup & Project Structure" },
+        { "id": "z6fgLFi6jcQ", "title": "JSX Deep Dive", "fullTitle": "React JS Tutorial for Beginners – Part 2 | JSX Deep Dive" },
+        { "id": "Ym1dkTnDTwo", "title": "Components – Functional & Class", "fullTitle": "React JS Tutorial for Beginners Part 3 | Components Explained – Functional & Class" },
+        { "id": "UNmKfvUVo5U", "title": "Props, State, Hooks & Exports", "fullTitle": "React JS Tutorial for Beginners Part 4 | Props, State Management, Hooks, Export & Default Export" },
+        { "id": "xfhifa1zdwo", "title": "Events in React", "fullTitle": "React JS Tutorial for Beginners Part 5 | Events in React Explained" },
+        { "id": "0WYv_ix859Y", "title": "CSS Styles in React", "fullTitle": "React JS Tutorial for Beginners Part 6 | CSS Styles in React Explained" },
+        { "id": "jNmyVzgMe0Y", "title": "React Router – Routes, Link, useNavigate", "fullTitle": "React JS Tutorial for Beginners Part 7 | React Router Explained | Routes, Link, useNavigate" },
+        { "id": "UyVtnC3Ncew", "title": "Fetch API & Axios", "fullTitle": "React JS Tutorial for Beginners Part 8 | Fetch API & Axios Explained" }
+      ]
+    },
+    {
+      "id": "csharp",
+      "type": "course",
+      "title": "C# & .NET Tutorial for Beginners",
+      "description": "Learn C# step by step: language basics, access modifiers, conditionals & loops, then core OOP and memory concepts like encapsulation, stack vs heap, boxing and unboxing.",
+      "topic": "C#",
+      "level": "Beginner",
+      "color": "#a179ff",
+      "playlistId": "PLxCUjoBRof1w6Sfr30XI9l2xLdufKLMRT",
+      "cover": "_5arBm-6B-c",
+      "lessons": [
+        { "id": "Pf5ExysnUgE", "title": "Basics of C# Programming", "fullTitle": "C# Tutorial for Beginners Part 1 | Basics of C# Programming" },
+        { "id": "RQ9xfm_uuyU", "title": "Internal Access Modifier, If Else, Switch & Loops", "fullTitle": "C# Tutorial for Beginners Part 2 | Internal Access Modifier, If Else, Switch & Loops" },
+        { "id": "_5arBm-6B-c", "title": "Encapsulation, Stack vs Heap, Boxing & Unboxing", "fullTitle": "C# Tutorial for Beginners Part 3 | Encapsulation, Stack vs Heap, Boxing & Unboxing" }
+      ]
+    },
+    {
+      "id": "tesseract",
+      "type": "course",
+      "title": "Tesseract OCR & Computer Vision with Python",
+      "description": "Read text from images with Python and Tesseract OCR: setup on Mac & Windows, traineddata and page segmentation modes, number-plate recognition and searching documents with regex.",
+      "topic": "Python",
+      "level": "Beginner",
+      "color": "#ffd43b",
+      "playlistId": "PLxCUjoBRof1ycCwVAaygqMw7t-cid9S6H",
+      "cover": "KTMza5bX8Yo",
+      "lessons": [
+        { "id": "CS07rYgymic", "title": "Python OCR Setup on Mac & Windows", "fullTitle": "Tesseract OCR Tutorial for Beginners | Python OCR Setup on Mac & Windows - Part 1" },
+        { "id": "sOaaqt5QhLk", "title": "Traineddata, PSM & Bounding Boxes", "fullTitle": "Tesseract OCR Tutorial for Beginners | Traineddata, PSM & Bounding Boxes Part 2" },
+        { "id": "VEHsL6sZzDs", "title": "Number Plate Recognition (NPR)", "fullTitle": "Number Plate Recognition (NPR) with Python and Tesseract OCR - Part 3" },
+        { "id": "QgoPaBe23ME", "title": "Build an ANPR System with Image Processing", "fullTitle": "Tesseract OCR Python Tutorial for Beginners | Build ANPR System with Image Processing - Part 4" },
+        { "id": "KTMza5bX8Yo", "title": "Searching Data in Documents with OCR & Regex", "fullTitle": "Searching Data in Documents Using Tesseract OCR & Regex - Part 5" }
+      ]
+    },
+    {
+      "id": "typescript",
+      "type": "course",
+      "title": "Learn TypeScript – Full Course for Beginners",
+      "description": "A day-by-day TypeScript course: syntax, variables and types, conditionals and loops, functions, interfaces, classes with inheritance and access modifiers.",
+      "topic": "TypeScript",
+      "level": "Beginner",
+      "color": "#3178c6",
+      "playlistId": "PLxCUjoBRof1xnenjb00GfFE67Elf5ui0s",
+      "cover": "qa-VU7Zl7Zk",
+      "lessons": [
+        { "id": "qa-VU7Zl7Zk", "title": "Basic Syntax & Introduction", "fullTitle": "TypeScript Tutorial | Day 1 | Part 1 | TypeScript Basic Syntax | Introduction" },
+        { "id": "mHliiJKMpkY", "title": "Variables & Types", "fullTitle": "TypeScript Tutorial | Day 2 | Part 2 | TypeScript Variables | Types In TypeScript" },
+        { "id": "mWYyL5HoL-U", "title": "Conditional Statements & Loops", "fullTitle": "TypeScript Tutorial | Day 3 | Part 3 | Conditional Statements In TypeScript | Loops in TypeScript" },
+        { "id": "MahBuXLBUk0", "title": "Functions", "fullTitle": "TypeScript Tutorial | Day 4 | Part 4 | Functions In TypeScript" },
+        { "id": "GfTL8A1x9NI", "title": "Interfaces", "fullTitle": "TypeScript Tutorial | Day 5 | Part 5 | Interface In TypeScript" },
+        { "id": "2RnUt0oXVwc", "title": "Classes & Inheritance", "fullTitle": "TypeScript Tutorial | Day 6 | Part 6 | Classes In TypeScript | Inheritance in TypeScript" },
+        { "id": "-vKrzsxwuhg", "title": "Access Modifiers", "fullTitle": "TypeScript Tutorial | Day 7 | Part 7 | Access Modifiers In TypeScript" }
+      ]
+    },
+    {
+      "id": "git",
+      "type": "playlist",
+      "title": "Git Tutorial for Beginners",
+      "description": "A quick Git session: learn Git in 15 minutes, create an SSH key for GitHub and master the everyday Git commands.",
+      "topic": "Git",
+      "level": "Beginner",
+      "color": "#f05032",
+      "playlistId": "PLxCUjoBRof1wmFrt9ZFBQP6BFaeCC4Rb8",
+      "cover": "ltdlmrT3DKk",
+      "lessons": [
+        { "id": "ltdlmrT3DKk", "title": "Learn Git in 15 Minutes – SSH Keys & Git Commands", "fullTitle": "A Quick GIT Session | Learn Git In 15 Minutes | How to create SSH-Key | Git Commands" }
+      ]
+    },
+    {
+      "id": "dotnet-interview",
+      "type": "playlist",
+      "title": ".NET Interview Questions & Answers",
+      "description": "Practical C# and .NET interview questions with clear answers: struct vs class, ref vs out, abstract class vs interface and more, for freshers and experienced candidates.",
+      "topic": "Interview",
+      "level": "All levels",
+      "color": "#10b981",
+      "playlistId": "PLxCUjoBRof1zljMyTz6h-D_vHlt_dGBIa",
+      "cover": "ymuTINfTqbs",
+      "lessons": [
+        { "id": "ymuTINfTqbs", "title": "C# Interview Questions – Freshers & Experienced", "fullTitle": "C# Interview Questions and Answers - For Freshers and Experienced Candidates" }
+      ]
+    }
+  ]
+}

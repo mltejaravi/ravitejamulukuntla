@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog · Raviteja Mulukuntla</title>
+  <meta name="description" content="Text tutorials and articles by Raviteja Mulukuntla on C#, .NET, React, TypeScript, Python and Git.">
+  <meta name="theme-color" content="#060918">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>try{var t=localStorage.getItem("rm-theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-page="blog">
+  <div class="bg-fx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span></div>
+  <header id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Blog &amp; text tutorials</span>
+        <h1>Learn by <span class="grad-text">reading</span></h1>
+        <p class="lead">Step-by-step written guides with copy-paste code, cheat sheets and interview notes. Each one pairs with a video.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px">
+      <div class="container">
+        <div class="toolbar">
+          <div class="filters" id="tag-filters" aria-label="Filter posts by tag"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="post-search" placeholder="Search articles…" aria-label="Search articles">
+          </label>
+        </div>
+        <div class="post-grid" id="post-list">
+          <div class="skeleton" style="height:360px"></div><div class="skeleton" style="height:360px"></div><div class="skeleton" style="height:360px"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/blog.js"></script>
+</body>
+</html>

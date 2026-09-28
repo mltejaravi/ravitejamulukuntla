@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "slug": "react-fetch-vs-axios",
+      "title": "Fetching Data in React: Fetch API vs Axios",
+      "summary": "How to call a REST API from a React component with useEffect, handle loading and errors, and when to reach for Axios instead of the built-in fetch.",
+      "date": "2026-09-28",
+      "tags": ["React", "JavaScript", "REST API"],
+      "video": "UyVtnC3Ncew",
+      "course": "react"
+    },
+    {
+      "slug": "csharp-stack-heap-boxing",
+      "title": "C# Stack vs Heap, Boxing & Unboxing Explained",
+      "summary": "Where value types and reference types live in memory, what really happens when you box an int, and why it matters for performance.",
+      "date": "2026-09-21",
+      "tags": ["C#", ".NET"],
+      "video": "_5arBm-6B-c",
+      "course": "csharp"
+    },
+    {
+      "slug": "tesseract-ocr-python-setup",
+      "title": "Getting Started with Tesseract OCR in Python",
+      "summary": "Install Tesseract on Mac or Windows, extract text from an image in five lines of Python, and improve accuracy with preprocessing and page segmentation modes.",
+      "date": "2026-09-14",
+      "tags": ["Python", "Tesseract", "OCR"],
+      "video": "CS07rYgymic",
+      "course": "tesseract"
+    },
+    {
+      "slug": "git-commands-cheatsheet",
+      "title": "Git in 15 Minutes: SSH Keys & Everyday Commands",
+      "summary": "Set up an SSH key for GitHub and learn the handful of Git commands you will use every single day, with a copy-paste cheat sheet.",
+      "date": "2026-09-07",
+      "tags": ["Git", "GitHub"],
+      "video": "ltdlmrT3DKk",
+      "course": "git"
+    }
+  ]
+}

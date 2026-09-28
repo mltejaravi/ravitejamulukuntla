@@ -1,0 +1,35 @@
+{
+  "name": "Raviteja Mulukuntla",
+  "handle": "@ravitejamulukuntla9655",
+  "tagline": "Full-Stack Developer · Educator · Senior Software Engineer",
+  "bio": "Hello! I'm Raviteja Mulukuntla, a senior software engineer working at a reputed IT firm. I share my professional experience through beginner-friendly tutorials on programming languages, real-world technical challenges and tricks that level up your coding skills, for beginners and experienced professionals across the globe.",
+  "avatar": "assets/img/avatar.jpg",
+  "role": "Senior Software Engineer",
+  "stats": {
+    "subscribers": "173+",
+    "videos": 25,
+    "courses": 4,
+    "playlists": 6
+  },
+  "tech": [
+    "C#",
+    ".NET Core",
+    ".NET",
+    "React",
+    "Python",
+    "Tesseract",
+    "TypeScript",
+    "MSSQL",
+    "Web API",
+    "REST API",
+    "Git"
+  ],
+  "links": {
+    "youtube": "https://www.youtube.com/@ravitejamulukuntla9655",
+    "subscribe": "https://www.youtube.com/@ravitejamulukuntla9655?sub_confirmation=1",
+    "facebook": "https://www.facebook.com/ravitejamulukuntlaofficial",
+    "instagram": "https://www.instagram.com/ravitejamulukuntlaofficial/",
+    "twitter": "https://twitter.com/mltejaofficial",
+    "linkedin": "https://www.linkedin.com/in/ravitejamulukuntlaofficial/"
+  }
+}
