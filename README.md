@@ -103,11 +103,11 @@ Update the subscriber count in `data/channel.json` whenever you like.
 ## After changing CSS or JavaScript
 
 Browsers cache `style.css` and the `.js` files, so visitors could keep seeing the old design for a while.
-Every page loads them with a version number, like `style.css?v=9`. When you edit a file in `assets/css` or `assets/js`,
+Every page loads them with a version number, like `style.css?v=11`. When you edit a file in `assets/css` or `assets/js`,
 raise that number in all four pages (`index.html`, `course.html`, `blog.html`, `post.html`) so browsers fetch the new copy:
 
 ```bash
-sed -i '' 's/?v=9"/?v=10"/g' index.html course.html blog.html post.html
+sed -i '' 's/?v=11"/?v=12"/g' index.html course.html blog.html post.html
 ```
 
 This isn't needed for blog posts, videos or apps (`data/*.json`, `posts/*.md`), which always load fresh.

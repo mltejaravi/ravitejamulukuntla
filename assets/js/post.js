@@ -78,7 +78,7 @@
 
     const lite = document.getElementById("lite-yt");
     if (lite) lite.addEventListener("click", () => {
-      lite.parentElement.innerHTML = `<iframe src="${RM.embedUrl(post.video)}" title="${esc(post.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+      RM.mountPlayer(lite.parentElement, post.video, post.title);
     });
     document.getElementById("copy-link").addEventListener("click", async () => {
       try { await navigator.clipboard.writeText(url); RM.toast("Link copied to clipboard"); } catch { RM.toast(url); }

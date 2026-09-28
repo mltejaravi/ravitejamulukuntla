@@ -36,21 +36,103 @@
   };
   const colorFor = (name) => TOPIC_COLORS[name] || "#22d3ee";
 
+  /* ---------- Centre-screen loader: shown while page data is being fetched ---------- */
+  const progress = (() => {
+    const LABELS = { home: "Loading courses & videos", courses: "Loading playlist", blog: "Loading articles" };
+    let el, bar, pct, value = 0, pending = 0, trickle, showTimer, hideTimer, shownAt = 0;
+    function ensure() {
+      if (el) return;
+      const page = document.body.dataset.page;
+      const label = location.pathname.endsWith("post.html") ? "Loading article" : LABELS[page] || "Loading";
+      el = document.createElement("div");
+      el.className = "page-loader";
+      el.setAttribute("role", "status");
+      el.setAttribute("aria-live", "polite");
+      el.innerHTML = `
+        <div class="pl-card">
+          <div class="pl-ring"><img src="assets/img/icon-192.png" alt=""></div>
+          <p class="pl-text">${label}<span class="pl-dots"><i>.</i><i>.</i><i>.</i></span></p>
+          <div class="pl-bar"><span></span></div>
+          <b class="pl-pct">0%</b>
+        </div>`;
+      document.body.appendChild(el);
+      bar = el.querySelector(".pl-bar span");
+      pct = el.querySelector(".pl-pct");
+    }
+    const set = (v) => {
+      value = v;
+      bar.style.width = (v * 100).toFixed(1) + "%";
+      pct.textContent = Math.round(v * 100) + "%";
+    };
+    function start() {
+      ensure();
+      pending++;
+      if (pending > 1) return;
+      clearTimeout(hideTimer);
+      if (value >= 1) set(0);
+      if (!el.classList.contains("show")) {
+        // only appear if loading takes long enough to notice, so fast loads don't flash
+        clearTimeout(showTimer);
+        showTimer = setTimeout(() => { el.classList.add("show"); shownAt = Date.now(); }, 120);
+      }
+      set(Math.max(value, 0.12));
+      clearInterval(trickle);
+      trickle = setInterval(() => set(value + (0.9 - value) * 0.12), 200);
+    }
+    function done() {
+      pending = Math.max(0, pending - 1);
+      if (pending) { set(Math.min(0.95, value + 0.15)); return; }
+      clearInterval(trickle);
+      clearTimeout(showTimer);
+      set(1);
+      if (!el.classList.contains("show")) return;
+      // keep it on screen briefly so it never just flickers
+      const wait = Math.max(250, 500 - (Date.now() - shownAt));
+      hideTimer = setTimeout(() => el.classList.remove("show"), wait);
+    }
+    return { start, done };
+  })();
+  const tracked = (promise) => { progress.start(); return promise.finally(progress.done); };
+
   const cache = {};
   function getJSON(path) {
     if (!cache[path]) {
-      cache[path] = fetch(path, { cache: "no-cache" }).then((r) => {
+      cache[path] = tracked(fetch(path, { cache: "no-cache" }).then((r) => {
         if (!r.ok) throw new Error(`Could not load ${path} (HTTP ${r.status})`);
         return r.json();
-      });
+      }));
     }
     return cache[path];
   }
   function getText(path) {
-    return fetch(path, { cache: "no-cache" }).then((r) => {
+    return tracked(fetch(path, { cache: "no-cache" }).then((r) => {
       if (!r.ok) throw new Error(`Could not load ${path} (HTTP ${r.status})`);
       return r.text();
-    });
+    }));
+  }
+
+  /* ---------- Video player with a loading screen until YouTube is ready ---------- */
+  function mountPlayer(box, id, title, autoplay = true) {
+    box.innerHTML = `
+      <div class="vloader" style="--vbg:url('${thumb(id)}')">
+        <div class="vl-inner">
+          <span class="vl-spin"></span>
+          <span class="vl-text">Loading video…</span>
+          <span class="vl-bar"><i></i></span>
+        </div>
+      </div>
+      <iframe src="${embedUrl(id, autoplay)}" title="${esc(title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    const loader = box.querySelector(".vloader");
+    requestAnimationFrame(() => requestAnimationFrame(() => loader.classList.add("run")));
+    let finished = false;
+    const finish = () => {
+      if (finished) return;
+      finished = true;
+      loader.classList.add("done");
+      setTimeout(() => loader.remove(), 500);
+    };
+    box.querySelector("iframe").addEventListener("load", finish, { once: true });
+    setTimeout(finish, 15000); // never leave the loader stuck on a slow network
   }
 
   const esc = (s) =>
@@ -234,8 +316,7 @@
   }
   function openVideo(video) {
     const m = ensureModal();
-    m.querySelector(".modal-frame").innerHTML =
-      `<iframe src="${embedUrl(video.id)}" title="${esc(video.fullTitle || video.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+    mountPlayer(m.querySelector(".modal-frame"), video.id, video.fullTitle || video.title);
     m.querySelector("h3").textContent = video.fullTitle || video.title;
     m.querySelector(".actions").innerHTML = `
       ${video.course ? `<a class="btn btn-ghost btn-sm" href="course.html?id=${video.course.id}&v=${video.id}">${ICONS.lessons} Open in course</a>` : ""}
@@ -318,7 +399,7 @@
   }
 
   window.RM = {
-    ICONS, colorFor, getJSON, getText, esc, thumb, watchUrl, playlistUrl, embedUrl, fmtDate, readTime, param,
+    ICONS, colorFor, getJSON, getText, progress, mountPlayer, esc, thumb, watchUrl, playlistUrl, embedUrl, fmtDate, readTime, param,
     store, watched, toggleWatched, allVideos, openVideo, reveal, toast, errorBox, courseCard, postCard, socialLinks
   };
 

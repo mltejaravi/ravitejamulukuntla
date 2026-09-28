@@ -87,7 +87,7 @@
     function load(i, autoplay) {
       index = i;
       const l = course.lessons[i];
-      $("player").innerHTML = `<iframe src="${RM.embedUrl(l.id, autoplay)}" title="${esc(l.fullTitle)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+      RM.mountPlayer($("player"), l.id, l.fullTitle, autoplay);
       $("np-kicker").textContent = `${noun} ${i + 1} of ${course.lessons.length}`;
       $("np-title").textContent = l.fullTitle;
       $("yt-btn").href = RM.watchUrl(l.id, course.playlistId);
