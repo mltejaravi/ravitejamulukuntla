@@ -99,7 +99,7 @@
     { href: "index.html#courses", label: "Courses", key: "courses" },
     { href: "index.html#videos", label: "Videos", key: "videos" },
     { href: "blog.html", label: "Blog", key: "blog" },
-    { href: "index.html#apps", label: "Apps", key: "apps" },
+    { href: "index.html#apps", label: "Mobile Apps", key: "apps" },
     { href: "index.html#about", label: "About", key: "about" }
   ];
 

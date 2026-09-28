@@ -3,25 +3,43 @@
     {
       "id": "pocketdocs",
       "name": "PocketDocs",
-      "tagline": "Your personal, fully offline digital locker for important documents.",
-      "description": "Keep your Driving Licence, RC, Pollution Certificate, Insurance, Aadhaar, PAN, Passport and more organized in one place on your phone. Scan, store, share and get renewal reminders, with nothing ever uploaded to a server.",
+      "tagline": "Your documents, always with you.",
+      "summary": "A personal, fully offline digital locker for your Driving Licence, RC, Pollution Certificate, Insurance, Aadhaar, PAN, Passport and more. Scan, organize, share and get renewal reminders, with nothing ever uploaded to a server.",
       "platform": "Android",
       "icon": "assets/img/apps/pocketdocs-icon.png",
-      "color": "#1f6f5c",
+      "color": "#1f7a63",
+      "accent": "#f4c86a",
       "playStore": "https://play.google.com/store/apps/details?id=com.raviteja.rmewallet",
-      "features": [
-        { "icon": "📷", "title": "Scan like a scanner", "text": "Capture both sides, crop the corners and clean up with Grayscale, B&W or Enhanced filters." },
-        { "icon": "🔒", "title": "100% offline & private", "text": "No login, no account, no analytics. Every document stays on your device." },
-        { "icon": "⏰", "title": "Renewal reminders", "text": "Set an expiry date and get a local reminder before a document lapses." },
-        { "icon": "📤", "title": "Share in one tap", "text": "Send documents as images or a combined PDF to WhatsApp, email or Drive." },
-        { "icon": "🔐", "title": "App Lock", "text": "Protected by your phone's fingerprint, face unlock, PIN or pattern." },
-        { "icon": "📝", "title": "Document to Text", "text": "Extract English text from any scan, fully offline. Available in English, Hindi & Telugu." }
+      "facts": [
+        { "value": "Free", "label": "No ads · No sign-up" },
+        { "value": "100%", "label": "Offline" },
+        { "value": "3", "label": "Languages" },
+        { "value": "3+", "label": "Age rating" }
       ],
+      "features": [
+        { "icon": "scan", "title": "Scan like a pro scanner", "text": "Capture both sides of any document, drag the corners to crop, and clean it up with Grayscale, B&W or Enhanced filters." },
+        { "icon": "folder", "title": "Organized your way", "text": "Browse by category with quick filter chips, add custom categories, and group related documents, like a “Car” pile for RC, Insurance & PUC." },
+        { "icon": "bell", "title": "Never miss a renewal", "text": "Set an expiry date on any document and get a reminder from your own phone before it lapses." },
+        { "icon": "share", "title": "Share in one tap", "text": "Send any document as images or a combined PDF to WhatsApp, email, Drive or anywhere else." },
+        { "icon": "lock", "title": "App Lock", "text": "Protected by the fingerprint, face unlock, PIN or pattern you already use. No new password to remember." },
+        { "icon": "text", "title": "Document to Text", "text": "Extract English text from any scan or photo, fully offline, then copy or share it instantly." },
+        { "icon": "upload", "title": "Import existing files", "text": "Already have a photo or PDF? Import it directly instead of scanning again." },
+        { "icon": "globe", "title": "Your language, your theme", "text": "Use it in English, हिंदी or తెలుగు, with Light, Dark or System theme." }
+      ],
+      "privacy": {
+        "title": "Your privacy, by design",
+        "text": "PocketDocs was built offline-first from the ground up. Your documents stay exactly where you put them, on your phone.",
+        "points": ["No login or account", "No analytics or tracking", "Nothing leaves your device", "Cloud backup off by default"]
+      },
       "screenshots": [
-        "assets/img/apps/pocketdocs-1.jpg",
-        "assets/img/apps/pocketdocs-2.jpg",
-        "assets/img/apps/pocketdocs-3.jpg",
-        "assets/img/apps/pocketdocs-4.jpg"
+        { "src": "assets/img/apps/pocketdocs-1.jpg", "caption": "All your documents in one place" },
+        { "src": "assets/img/apps/pocketdocs-2.jpg", "caption": "Scan front & back in seconds" },
+        { "src": "assets/img/apps/pocketdocs-3.jpg", "caption": "Set expiry reminders" },
+        { "src": "assets/img/apps/pocketdocs-4.jpg", "caption": "Document to Text, offline" },
+        { "src": "assets/img/apps/pocketdocs-5.jpg", "caption": "Backup, restore & App Lock" },
+        { "src": "assets/img/apps/pocketdocs-6.jpg", "caption": "Light, Dark or System theme" },
+        { "src": "assets/img/apps/pocketdocs-7.jpg", "caption": "English, Hindi & Telugu" },
+        { "src": "assets/img/apps/pocketdocs-8.jpg", "caption": "Built by Raviteja Mulukuntla" }
       ]
     }
   ]

@@ -95,10 +95,22 @@ Update the subscriber count in `data/channel.json` whenever you like.
 
 ## Adding a mobile app
 
-1. Put the app icon (square PNG, 256×256) and 3 phone screenshots in `assets/img/apps/`.
+1. Put the app icon (square PNG, 256×256) and phone screenshots (9:16) in `assets/img/apps/`.
 2. Copy the `pocketdocs` entry in `data/apps.json`, then change the name, text, `playStore` link, `icon`, `features` and `screenshots`.
-   The first screenshot is shown in the middle phone.
+   Each screenshot has a `caption` shown under it in the carousel.
 3. Commit and push.
+
+## After changing CSS or JavaScript
+
+Browsers cache `style.css` and the `.js` files, so visitors could keep seeing the old design for a while.
+Every page loads them with a version number, like `style.css?v=9`. When you edit a file in `assets/css` or `assets/js`,
+raise that number in all four pages (`index.html`, `course.html`, `blog.html`, `post.html`) so browsers fetch the new copy:
+
+```bash
+sed -i '' 's/?v=9"/?v=10"/g' index.html course.html blog.html post.html
+```
+
+This isn't needed for blog posts, videos or apps (`data/*.json`, `posts/*.md`), which always load fresh.
 
 ## Using the data in a mobile app
 
