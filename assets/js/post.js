@@ -39,7 +39,7 @@
         <p class="summary">${esc(post.summary)}</p>
         <div class="byline">
           <img src="assets/img/avatar.jpg" alt="">
-          <div><b><a href="https://www.linkedin.com/in/ravitejamulukuntlaofficial/" target="_blank" rel="noopener">Raviteja Mulukuntla</a></b>Senior Software Engineer</div>
+          <div><b><a href="https://www.linkedin.com/in/ravitejamulukuntlaofficial/" target="_blank" rel="noopener">Raviteja Mulukuntla</a></b>Lead Software Engineer</div>
           <span class="sep"></span><span>${RM.fmtDate(post.date)}</span>
           <span class="sep"></span><span>${RM.readTime(md)} min read</span>
         </div>
