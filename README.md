@@ -1,5 +1,7 @@
 # Raviteja Mulukuntla: Courses, Videos & Blog
 
+**Live site:** https://mltejaravi.github.io/ravitejamulukuntla/
+
 The official website for the [Raviteja Mulukuntla YouTube channel](https://www.youtube.com/@ravitejamulukuntla9655).
 It's plain HTML, CSS and JavaScript with no build step, so it runs directly on **GitHub Pages**.
 
@@ -24,6 +26,7 @@ It's plain HTML, CSS and JavaScript with no build step, so it runs directly on *
 ├── data/                      # ← the content, and a JSON "API" for your mobile app
 │   ├── channel.json           # name, bio, stats, social links
 │   ├── courses.json           # courses/playlists and their videos
+│   ├── apps.json              # mobile apps (Play Store links, features, screenshots)
 │   └── posts.json             # blog post list (metadata)
 └── posts/
     └── <slug>.md              # blog post bodies in Markdown
@@ -90,15 +93,23 @@ Open `data/courses.json`:
 
 Update the subscriber count in `data/channel.json` whenever you like.
 
+## Adding a mobile app
+
+1. Put the app icon (square PNG, 256×256) and 3 phone screenshots in `assets/img/apps/`.
+2. Copy the `pocketdocs` entry in `data/apps.json`, then change the name, text, `playStore` link, `icon`, `features` and `screenshots`.
+   The first screenshot is shown in the middle phone.
+3. Commit and push.
+
 ## Using the data in a mobile app
 
 Everything the site shows comes from static JSON and Markdown, so your app can read the same URLs:
 
 ```
-https://<username>.github.io/data/channel.json
-https://<username>.github.io/data/courses.json
-https://<username>.github.io/data/posts.json
-https://<username>.github.io/posts/<slug>.md
+https://mltejaravi.github.io/ravitejamulukuntla/data/channel.json
+https://mltejaravi.github.io/ravitejamulukuntla/data/courses.json
+https://mltejaravi.github.io/ravitejamulukuntla/data/posts.json
+https://mltejaravi.github.io/ravitejamulukuntla/data/apps.json
+https://mltejaravi.github.io/ravitejamulukuntla/posts/<slug>.md
 ```
 
 Thumbnails: `https://i.ytimg.com/vi/<VIDEO_ID>/hqdefault.jpg`, videos: `https://www.youtube.com/watch?v=<VIDEO_ID>`.

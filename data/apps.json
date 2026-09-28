@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "id": "pocketdocs",
+      "name": "PocketDocs",
+      "tagline": "Your personal, fully offline digital locker for important documents.",
+      "description": "Keep your Driving Licence, RC, Pollution Certificate, Insurance, Aadhaar, PAN, Passport and more organized in one place on your phone. Scan, store, share and get renewal reminders, with nothing ever uploaded to a server.",
+      "platform": "Android",
+      "icon": "assets/img/apps/pocketdocs-icon.png",
+      "color": "#1f6f5c",
+      "playStore": "https://play.google.com/store/apps/details?id=com.raviteja.rmewallet",
+      "features": [
+        { "icon": "📷", "title": "Scan like a scanner", "text": "Capture both sides, crop the corners and clean up with Grayscale, B&W or Enhanced filters." },
+        { "icon": "🔒", "title": "100% offline & private", "text": "No login, no account, no analytics. Every document stays on your device." },
+        { "icon": "⏰", "title": "Renewal reminders", "text": "Set an expiry date and get a local reminder before a document lapses." },
+        { "icon": "📤", "title": "Share in one tap", "text": "Send documents as images or a combined PDF to WhatsApp, email or Drive." },
+        { "icon": "🔐", "title": "App Lock", "text": "Protected by your phone's fingerprint, face unlock, PIN or pattern." },
+        { "icon": "📝", "title": "Document to Text", "text": "Extract English text from any scan, fully offline. Available in English, Hindi & Telugu." }
+      ],
+      "screenshots": [
+        "assets/img/apps/pocketdocs-1.jpg",
+        "assets/img/apps/pocketdocs-2.jpg",
+        "assets/img/apps/pocketdocs-3.jpg",
+        "assets/img/apps/pocketdocs-4.jpg"
+      ]
+    }
+  ]
+}

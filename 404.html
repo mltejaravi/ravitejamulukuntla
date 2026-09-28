@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found · Raviteja Mulukuntla</title>
   <meta name="theme-color" content="#060918">
-  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root { --bg:#060918; --text:#eef1ff; --muted:#8b93b8; }
@@ -23,7 +22,12 @@
   <div>
     <h1>404</h1>
     <p>This page took a wrong turn. Let's get you back to learning.</p>
-    <a href="/">Go to homepage</a>
+    <a href="/" id="home">Go to homepage</a>
   </div>
+  <script>
+    // On a project site (username.github.io/repo/) the homepage is /repo/, not /
+    var seg = location.pathname.split("/")[1];
+    if (location.hostname.endsWith("github.io") && seg) document.getElementById("home").href = "/" + seg + "/";
+  </script>
 </body>
 </html>

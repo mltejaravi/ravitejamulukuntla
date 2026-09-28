@@ -16,6 +16,7 @@
     menu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>',
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+    googlePlay: '<svg viewBox="0 0 24 24"><path fill="#00d7fe" d="M3.6 1.8c-.3.3-.4.7-.4 1.2v18c0 .5.1.9.4 1.2l.1.1L13.8 12.2V12L3.7 1.7l-.1.1Z"/><path fill="#ffce00" d="m17.1 15.6-3.3-3.4V12l3.3-3.4h.1l4 2.3c1.1.6 1.1 1.7 0 2.4l-4 2.3h-.1Z"/><path fill="#ff3a44" d="m17.2 15.5-3.4-3.4L3.6 22.2c.4.4 1 .4 1.7.1l11.9-6.8"/><path fill="#00f076" d="M17.2 8.6 5.3 1.8c-.7-.4-1.3-.3-1.7.1l10.2 10.2 3.4-3.5Z"/></svg>',
     arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
     arrowLeft: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>',
     chevron: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>',
@@ -98,6 +99,7 @@
     { href: "index.html#courses", label: "Courses", key: "courses" },
     { href: "index.html#videos", label: "Videos", key: "videos" },
     { href: "blog.html", label: "Blog", key: "blog" },
+    { href: "index.html#apps", label: "Apps", key: "apps" },
     { href: "index.html#about", label: "About", key: "about" }
   ];
 
@@ -188,6 +190,7 @@
             <ul>
               <li><a href="index.html#videos">All videos</a></li>
               <li><a href="blog.html">Blog &amp; text tutorials</a></li>
+              <li><a href="index.html#apps">Mobile apps</a></li>
               <li><a href="index.html#about">About me</a></li>
               <li><a href="${esc(channel.links?.youtube || "#")}" target="_blank" rel="noopener">YouTube channel</a></li>
             </ul>
